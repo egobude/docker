@@ -1,0 +1,49 @@
+###############################################
+## PHP FPM
+phpfpm:
+  image: egobude/php
+  volumes_from:
+    - storage
+  links:
+    - redis
+    - elasticsearch
+    - mariadb
+
+###############################################
+## WebApp
+webapp:
+  image: egobude/nginx
+  volumes_from:
+    - storage
+  ports:
+   - 81:80
+  links:
+    - phpfpm
+
+###############################################
+## MariaDB
+mariadb:
+  image: egobude/mariadb
+  environment:
+    MYSQL_ROOT_PASSWORD: 'root'
+    MYSQL_DATABASE: 'database'
+    MYSQL_USER: 'user'
+    MYSQL_PASSWORD: 'password'
+
+###############################################
+## Redis
+redis:
+  image: egobude/redis
+
+###############################################
+## Elasticsearch
+elasticsearch:
+  image: egobude/elasticsearch
+
+###############################################
+## Data Storage
+storage:
+  image: alpine:latest
+  volumes:
+    - ./data:/data
+  command: 'true'

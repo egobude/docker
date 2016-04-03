@@ -1,0 +1,1 @@
+FROM smebberson/alpine-redis
