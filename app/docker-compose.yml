@@ -1,7 +1,7 @@
 ###############################################
 ## PHP FPM
 phpfpm:
-  image: egobude/php
+  image: zeroboh/php
   volumes_from:
     - storage
   links:
@@ -12,7 +12,7 @@ phpfpm:
 ###############################################
 ## WebApp
 webapp:
-  image: egobude/nginx
+  image: zeroboh/nginx
   volumes_from:
     - storage
   ports:
@@ -23,7 +23,7 @@ webapp:
 ###############################################
 ## MariaDB
 mariadb:
-  image: egobude/mariadb
+  image: zeroboh/mariadb
   environment:
     MYSQL_ROOT_PASSWORD: 'root'
     MYSQL_DATABASE: 'database'
@@ -33,17 +33,17 @@ mariadb:
 ###############################################
 ## Redis
 redis:
-  image: egobude/redis
+  image: zeroboh/redis
 
 ###############################################
 ## Elasticsearch
 elasticsearch:
-  image: egobude/elasticsearch
+  image: zeroboh/elasticsearch
 
 ###############################################
 ## Data Storage
 storage:
-  image: alpine:latest
+  image: zeroboh/storage
   volumes:
     - ./data:/data
   command: 'true'

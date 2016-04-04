@@ -1,1 +1,1 @@
-docker build -t egobude/elasticsearch --no-cache .
+docker build -t zeroboh/elasticsearch --no-cache .

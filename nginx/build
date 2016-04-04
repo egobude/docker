@@ -1,1 +1,1 @@
-docker build -t egobude/nginx --no-cache .
+docker build -t zeroboh/nginx --no-cache .

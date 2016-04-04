@@ -1,1 +1,1 @@
-docker build -t egobude/php --no-cache .
+docker build -t zeroboh/php --no-cache .

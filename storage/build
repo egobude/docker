@@ -1,0 +1,1 @@
+docker build -t zeroboh/storage --no-cache .

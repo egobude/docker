@@ -1,1 +1,1 @@
-docker build -t egobude/mariadb --no-cache .
+docker build -t zeroboh/mariadb --no-cache .
