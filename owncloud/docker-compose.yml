@@ -1,0 +1,36 @@
+###############################################
+## Owncloud
+owncloud:
+  image: zeroboh/owncloud
+  links:
+    - mariadb
+  ports:
+    - 83:80
+
+###############################################
+## MariaDB
+mariadb:
+  image: zeroboh/mariadb
+  environment:
+    MYSQL_ROOT_PASSWORD: 'root'
+    MYSQL_DATABASE: 'owncloud'
+    MYSQL_USER: 'owncloud'
+    MYSQL_PASSWORD: 'owncloud'
+  volumes_from:
+    - storageMariadb
+
+###############################################
+## Storage Owncloud
+storageOwncloud:
+  image: zeroboh/storage
+  volumes:
+    - /var/www/html
+  command: 'true'
+
+###############################################
+## Storage Mariadb
+storageMariadb:
+  image: zeroboh/storage
+  volumes:
+    - /var/lib/mysql
+  command: 'true'

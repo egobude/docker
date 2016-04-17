@@ -1,0 +1,1 @@
+docker build -t zeroboh/owncloud --no-cache .
