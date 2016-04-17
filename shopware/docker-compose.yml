@@ -1,0 +1,18 @@
+###############################################
+## MariaDB
+mariadb:
+  image: zeroboh/mariadb
+  environment:
+    MYSQL_ROOT_PASSWORD: 'root'
+    MYSQL_DATABASE: 'shopware'
+    MYSQL_USER: 'shopware'
+    MYSQL_PASSWORD: 'shopware'
+
+###############################################
+## Shopware
+shopware:
+  image: zeroboh/shopware
+  links:
+    - mariadb
+  ports:
+    - 81:80
