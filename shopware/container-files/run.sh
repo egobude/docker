@@ -10,7 +10,6 @@ if [ ! -e /var/www/shopware/shopware.php ]; then
                          /var/www/shopware/recovery \
                          /var/www/shopware/themes/Frontend \
                          /var/www/shopware/config.php \
-                         /var/www/shopware/cache \
                          /var/www/shopware/files/* \
                          /var/www/shopware/engine/Shopware/Plugins/Community/ \
                          /var/www/shopware/engine/Shopware/Plugins/Default/ \
