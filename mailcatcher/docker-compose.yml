@@ -1,0 +1,6 @@
+###############################################
+## Mailcatcher
+mailcatcher:
+  image: zeroboh/mailcatcher
+  ports:
+    - 80
