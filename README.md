@@ -1,1 +1,1 @@
-# Docker Development Stack for PHP Applications
+# Various docker images
