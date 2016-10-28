@@ -1,12 +1,12 @@
 pureftpd:
-  image: docker-registry.avency.de:5000/avency/pure-ftpd
+  image: egobude/pure-ftpd
   ports:
     - "21:21"
     - "30000-30009:30000-30009"
   volumes:
     - ./ftpuser:/home/ftpuser
     - ./pure-ftpd:/etc/pure-ftpd
-  environment: 
-    - PUBLICHOST=localhost 
+  environment:
+    - PUBLICHOST=localhost
   privileged: true
   restart: always
