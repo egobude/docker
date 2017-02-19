@@ -1,6 +1,6 @@
 FROM ubuntu:16.04
 
-MAINTAINER Benedikt Schmitz <benedikt.schmitz@avency.de>
+
 
 ENV PUBLICHOST localhost
 
@@ -10,7 +10,7 @@ RUN set -xe \
     && apt-get install -y pure-ftpd \
     && rm -rf /var/lib/apt/lists/* \
     && groupadd ftpgroup \
-    && useradd -g ftpgroup -m ftpuser 
+    && useradd -g ftpgroup -m ftpuser
 
 # Expose ports
 EXPOSE 21 30000-30009
