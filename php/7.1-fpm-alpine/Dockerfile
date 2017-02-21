@@ -56,9 +56,7 @@ RUN set -x \
       xml \
       soap \
       sockets \
-    && pear upgrade \
-    && pecl upgrade
-    && pecl channel-update \
+    
     && docker-php-ext-configure ldap --with-libdir=lib/ \
     && docker-php-ext-install ldap \
     && pecl install imagick redis-${PHP_REDIS_VERION} yaml-${PHP_YAML_VERION} uuid \
