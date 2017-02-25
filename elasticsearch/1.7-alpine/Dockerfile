@@ -1,7 +1,5 @@
 FROM elasticsearch:1.7-alpine
 
-
-
 # Build arguments
 ARG BUILD_DATE
 ARG VCS_REF

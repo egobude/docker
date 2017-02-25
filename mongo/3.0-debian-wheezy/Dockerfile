@@ -1,7 +1,5 @@
 FROM mongo:3.0
 
-
-
 # Build arguments
 ARG BUILD_DATE
 ARG VCS_REF

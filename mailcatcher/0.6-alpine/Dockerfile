@@ -1,7 +1,5 @@
 FROM ruby:2.1-alpine
 
-
-
 # Build arguments
 ARG BUILD_DATE
 ARG VCS_REF

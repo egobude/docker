@@ -1,7 +1,5 @@
 FROM mysql:5.5
 
-
-
 # Build arguments
 ARG BUILD_DATE
 ARG VCS_REF

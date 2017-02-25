@@ -1,7 +1,5 @@
 FROM redis:3.0-alpine
 
-
-
 # Build arguments
 ARG BUILD_DATE
 ARG VCS_REF

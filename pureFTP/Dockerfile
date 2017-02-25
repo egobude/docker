@@ -1,7 +1,5 @@
 FROM ubuntu:16.04
 
-
-
 ENV PUBLICHOST localhost
 
 # Install dependencies

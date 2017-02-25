@@ -1,7 +1,5 @@
 FROM mariadb:10.0
 
-
-
 # Build arguments
 ARG BUILD_DATE
 ARG VCS_REF

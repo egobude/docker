@@ -1,7 +1,5 @@
 FROM openjdk:8-jdk-alpine
 
-
-
 # Build arguments
 ARG BUILD_DATE
 ARG VCS_REF

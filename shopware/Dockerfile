@@ -1,7 +1,5 @@
 FROM ubuntu:14.04
 
-MAINTAINER Benedikt Schmitz <zeroboh@gmail.com>
-
 RUN apt-get update && \
     apt-get -y install wget apache2 php5 apache2-utils libapache2-mod-php5 php5-apcu php5-cli php5-curl php5-gd php5-mcrypt php5-mysql curl git unzip && \
     apt-get clean && \

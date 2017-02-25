@@ -1,7 +1,5 @@
 FROM rabbitmq:3.6
 
-
-
 # Build arguments
 ARG BUILD_DATE
 ARG VCS_REF

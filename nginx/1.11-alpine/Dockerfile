@@ -1,7 +1,5 @@
 FROM nginx:1.11-alpine
 
-
-
 # Build arguments
 ARG BUILD_DATE
 ARG VCS_REF

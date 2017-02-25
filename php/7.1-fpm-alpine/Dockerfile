@@ -1,7 +1,5 @@
 FROM php:7.1-fpm-alpine
 
-
-
 # Build arguments
 ARG BUILD_DATE
 ARG VCS_REF

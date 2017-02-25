@@ -1,7 +1,5 @@
 FROM httpd:2.4-alpine
 
-
-
 # Build arguments
 ARG BUILD_DATE
 ARG VCS_REF
