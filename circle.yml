@@ -20,7 +20,7 @@ dependencies:
 test:
   pre:
     # Build million12/centos-supervisor image
-    - cd redis/3.2-alpine && docker build -t zeroboh/redis:3.2-alpine .
+    - cd composer && docker build -t zeroboh/composer .
 
   #override:
   #  - docker run -d million12/centos-supervisor
