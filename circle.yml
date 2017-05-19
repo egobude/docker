@@ -20,7 +20,7 @@ dependencies:
 test:
   pre:
     # Build million12/centos-supervisor image
-    - docker pull nginx:latest
+    - cd redis/3.2-alpine && docker build -t zeroboh/redis:3.2-alpine .
 
   #override:
   #  - docker run -d million12/centos-supervisor
