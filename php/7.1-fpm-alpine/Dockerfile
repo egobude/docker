@@ -34,8 +34,9 @@ RUN set -x \
     && docker-php-ext-install \
       gd \
       pdo \
-      pdo_mysql \
+      pdo_mysql \      
       pdo_pgsql \
+      mysqli \
       mbstring \
       opcache \
       intl \
